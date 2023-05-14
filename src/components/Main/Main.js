@@ -74,7 +74,7 @@ const Main = () => {
                   </div>
 
                   <button  className="btn flex">
-                    <a href={view} target='_blank'>VIEW</a> 
+                    <a href={view} target='_blank' rel="noreferrer">VIEW</a> 
                   </button>
                 </div>
               </div>
