@@ -1,0 +1,119 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(195, 198, 201, 0.904);
+}
+
+.header-bg {
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: 0.5s;
+}
+
+.logo {
+    color: White;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.diff {
+    color: rgb(224, 198, 46);
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    padding: 0 1rem;
+}
+
+.nav-menu li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.97);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 1rem 0;
+    
+    }
+
+    .nav-menu li a {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .hamburger {
+        display: initial;
+    }
+
+    .navItem .navLink {
+        color: rgb(224, 198, 46);
+    }
+
+    .navItem .navLink:hover {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .navItem .navLink {
+        color: rgb(224, 198, 46);
+        padding: 0 0.45rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .navItem .navLink:hover {
+        color: white;
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+    .header {
+      padding: 0 5.7rem;
+    }
+
+}
+
+@media screen and (min-width: 1240px) {
+    .header {
+      padding: 1rem 5.5rem;
+    }
+}

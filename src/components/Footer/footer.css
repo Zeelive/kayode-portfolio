@@ -1,0 +1,70 @@
+.footer {
+  width: 100%;
+}
+
+.secTitle {
+  padding: 1rem 0 0;
+}
+
+.footer .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: rgb(224, 198, 46);
+  margin: 1rem 0;
+  z-index: 2;
+}
+
+.footer .secTitle .title::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, hsl(80, 13%, 95%), rgb(248, 211, 3));
+  height: 1px;
+  width: 200px;
+  left: 0;
+  bottom: 0px;
+}
+
+.footerParagraph {
+  font-size: 13px;
+  color: white;
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  margin: auto;
+  max-width: 600px;  
+  justify-content: center;
+  align-items: center;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 10px 18px;
+  font-size: 16px;
+  background: transparent;
+  color: #f4f4f4;
+  border-radius: 15px;
+  width: 80%;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 13px;
+  opacity: .5;
+}
+
+textarea::placeholder {
+  font-size: 13px;
+  opacity: .5;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .footerParagraph {
+      font-size: 16px;
+  }
+}
