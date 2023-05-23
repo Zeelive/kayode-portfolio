@@ -80,15 +80,6 @@ img {
     font-size: 1.25rem;
 }
 
-.desc {
-    font-size: 13.5px;
-    color: hsl(240, 4%, 36%);
-    font-weight: 500;
-    border-top: 1.5px solid  rgb(190, 190, 190);
-    border-bottom: 1.5px solid rgb(190, 190, 190);
-    padding: 1rem 0;
-    margin: 1rem 0;
-}
 
 .btn {
     margin-top: 1rem;

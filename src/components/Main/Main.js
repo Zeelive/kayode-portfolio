@@ -3,6 +3,7 @@ import './main.css';
 import img from '../../assets/img1.png';
 import img2 from '../../assets/img2.png';
 import img3 from '../../assets/img3.png';
+import img4 from '../../assets/img4.png';
 import html from '../../assets/html.png';
 import css from '../../assets/css.png';
 import javascript from '../../assets/javascript.png';
@@ -18,7 +19,6 @@ const Data = [
     id: 1,
     imgSrc: img,
     destTitle: "Matour Travel and Tour",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vitae id amet totam in ratione voluptatibus cum. Esse in nihil quae temporibus quod, ipsam cum explicabo cupiditate sit quam iure.",
     view: "https://matour.netlify.app/"
   },
 
@@ -26,7 +26,6 @@ const Data = [
     id: 2,
     imgSrc: img2,
     destTitle: "Data Finance App",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vitae id amet totam in ratione voluptatibus cum. Esse in nihil quae temporibus quod, ipsam cum explicabo cupiditate sit quam iure.",
     view: "https://kayodedata.netlify.app/"
   },
 
@@ -34,8 +33,14 @@ const Data = [
     id: 3,
     imgSrc: img3,
     destTitle: "ZeeLive Javascript Clock",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vitae id amet totam in ratione voluptatibus cum. Esse in nihil quae temporibus quod, ipsam cum explicabo cupiditate sit quam iure.",
     view: "https://zeeliveclock.netlify.app/"
+  },
+
+  {
+    id: 4,
+    imgSrc: img4,
+    destTitle: "YouTube Clone",
+    view: "https://kay-youtube.netlify.app/"
   },
 ]
 
@@ -59,7 +64,7 @@ const Main = () => {
 
       <div className="secContent grid">
       {
-           Data.map(({id, imgSrc, destTitle, description, view})=> {
+           Data.map(({id, imgSrc, destTitle, view})=> {
             return (
               <div key={id} data-aos="fade-up" className="singleDestination">
                 <div className="imageDiv">
@@ -68,10 +73,6 @@ const Main = () => {
 
                 <div className="cardInfo">
                   <h4 className="destTitle">{destTitle}</h4>
-
-                  <div className="desc">
-                    <p>{description}</p>
-                  </div>
 
                   <button  className="btn flex">
                     <a href={view} target='_blank' rel="noreferrer">VIEW</a> 
