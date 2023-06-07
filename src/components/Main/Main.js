@@ -4,6 +4,7 @@ import img from '../../assets/img1.png';
 import img2 from '../../assets/img2.png';
 import img3 from '../../assets/img3.png';
 import img4 from '../../assets/img4.png';
+import img5 from '../../assets/img5.png';
 import html from '../../assets/html.png';
 import css from '../../assets/css.png';
 import javascript from '../../assets/javascript.png';
@@ -17,27 +18,33 @@ import 'aos/dist/aos.css';
 const Data = [
   {
     id: 1,
+    imgSrc: img5,
+    destTitle: "MaMart ShoeCommerce",
+    view: "https://mamart.netlify.app/"
+  },
+  {
+    id: 2,
     imgSrc: img,
     destTitle: "Matour Travel and Tour",
     view: "https://matour.netlify.app/"
   },
 
   {
-    id: 2,
+    id: 3,
     imgSrc: img2,
     destTitle: "Data Finance App",
     view: "https://kayodedata.netlify.app/"
   },
 
   {
-    id: 3,
+    id: 4,
     imgSrc: img3,
     destTitle: "ZeeLive Javascript Clock",
     view: "https://zeeliveclock.netlify.app/"
   },
 
   {
-    id: 4,
+    id: 5,
     imgSrc: img4,
     destTitle: "YouTube Clone",
     view: "https://kay-youtube.netlify.app/"
